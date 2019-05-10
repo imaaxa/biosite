@@ -442,7 +442,7 @@ nav {
   text-decoration: none;
 }
 .main_menu__link:hover {
-  background: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 3px 3px 0 0;
   color: #fff;
 }
@@ -464,6 +464,7 @@ nav {
 --------------------------------------*/
 .aside {
   grid-area: right;
+  min-width: 14em;
 }
 
 @media (min-width: 40rem) {
