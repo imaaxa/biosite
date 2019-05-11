@@ -301,13 +301,14 @@ img {
   _images.scss
 --------------------------------------*/
 .image-grid {
-  display: grid;
+  /*display: grid;
   grid-gap: 3rem 2rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;*/
   padding: 2rem 1rem;
 }
 .image-grid__image {
   position: relative;
+  margin-bottom: 1em;
 }
 .image-grid__file {
   width: 100%;
@@ -316,7 +317,7 @@ img {
 }
 .image-grid__caption {
   position: absolute;
-  bottom: 0;
+  bottom: 4px;
   text-align: center;
   font-style: italic;
   font-size: 1.25rem;
@@ -461,6 +462,7 @@ nav {
 --------------------------------------*/
 .main {
   grid-area: left;
+  margin-top: 1em;
 }
 
 /*------------------------------------
