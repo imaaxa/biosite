@@ -595,5 +595,5 @@ body {
 
 .vertical input[type=radio]:checked~label~.faq__beat_def,
 .vertical input[type=checkbox]:checked~label~.faq__beat_def {
-  height: 4em;
+  height: 5em;
 }
