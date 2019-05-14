@@ -141,7 +141,7 @@ body {
 
 .req:after {
   content: " *";
-  color: #ff2828;
+  color: #ac0000;
 }
 
 /*------------------------------------
@@ -154,7 +154,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #ff2828;
+  color: #ac0000;
 }
 
 /*------------------------------------
@@ -337,7 +337,7 @@ img {
 }
 .aside-container__title {
   font-size: 1.25rem;
-  background-color: #ff2828;
+  background-color: #ac0000;
   border: 1px solid #740000;
   border-radius: 3px 3px 0 0;
   color: #fff;
@@ -365,8 +365,8 @@ img {
   transition: padding .1s ease-in-out;
 }
 .aside-container__list_link:hover {
-  border-color: #ff2828;
-  color: #ff2828;
+  border-color: #ac0000;
+  color: #ac0000;
   padding-left: 1.5em;
 }
 
@@ -388,7 +388,7 @@ figcaption {
   _header.scss
 --------------------------------------*/
 .header {
-  background-color: #ff2828;
+  background-color: #ac0000;
   color: #fff;
   font-size: 1rem;
   line-height: 1rem;
