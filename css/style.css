@@ -400,6 +400,7 @@ figcaption {
   background-size: cover;
 }
 .header__title {
+  color: #ffffff;
   padding-bottom: 0.625rem;
 }
 .header__tag_line {
