@@ -77,6 +77,21 @@ body {
   line-height: 1.25rem;
 }
 
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #ac0000;
+  color: #ffffff;
+  padding: .5em;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  color: #ffffff;
+  top: 0px;
+}
+
 .is-hidden {
   display: none !important;
   visibility: hidden !important;
