@@ -320,9 +320,6 @@ img {
   _images.scss
 --------------------------------------*/
 .image-grid {
-  /*display: grid;
-  grid-gap: 3rem 2rem;
-  grid-template-columns: 1fr 1fr 1fr;*/
   padding: 2rem 1rem;
 }
 .image-grid__image {
@@ -403,17 +400,33 @@ figcaption {
   _header.scss
 --------------------------------------*/
 .header {
-  background-color: #ac0000;
+  /*background-color: #ac0000;*/
   color: #fff;
   font-size: 1rem;
   line-height: 1rem;
   grid-area: header;
   padding: 0.4rem 1rem;
-  background-image: url('../images/eclips.jpg');
+  background-image: url('../images/eclips_small.jpg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
+
+@media screen
+  and (min-width: 40rem)
+  and (max-width: 49.99rem) {
+  .header {
+    background-image: url('../images/eclips_med.jpg');
+  }
+}
+
+@media screen
+  and (min-width: 50rem) {
+  .header {
+    background-image: url('../images/eclips_wide.jpg');
+  }
+}
+
 .header__title {
   color: #ffffff;
   padding-bottom: 0.625rem;
