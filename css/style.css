@@ -167,9 +167,12 @@ a {
   text-decoration: none;
   outline: 0;
 }
-a:hover,
-a:focus {
+a:hover {
   color: #ac0000;
+}
+
+a:focus {
+  outline: 3px solid #ac0000;
 }
 
 /*------------------------------------
