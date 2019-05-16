@@ -84,6 +84,7 @@ body {
   background-color: #ac0000;
   color: #ffffff;
   padding: .5em;
+  text-decoration: none;
   z-index: 100;
 }
 
@@ -403,7 +404,7 @@ figcaption {
   _header.scss
 --------------------------------------*/
 .header {
-  /*background-color: #ac0000;*/
+  background-color: #ac0000;
   color: #fff;
   font-size: 1rem;
   line-height: 1rem;
