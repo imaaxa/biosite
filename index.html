@@ -1,293 +1,453 @@
+<!--
+============================================
+; Title: Assignment 4.4 - Personal Portfolio (Milestone 3): User Interface Submission
+; Author: Cory Gilliam
+; Date: 28 Aug 2019
+; Modified By:
+; Description: Personal Portfolio Site. Influenced by a design by Pascal van Germett.
+;===========================================
+-->
 <!DOCTYPE html>
 <html class="pl" lang="en">
 
 <head>
-  <title>Biosite: Gilliam</title>
+  <title>Cory Gilliam</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="Home page of Patricia Gilliam.">
+  <meta name="Description" content="Home page of Cory Gilliam.">
   <link rel="stylesheet" href="css/style.css" media="all" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
   <!-- Begin header -->
+  <!--
   <header id="header" class="header" role="banner">
     <!-- Begining header_title -->
-    <h1 class="header__title">Patricia Gilliam</h1>
+  <!--   <h1 class="header__title">Cory Gilliam</h1>
     <!-- End header_title -->
 
     <!-- Begining header_tagline -->
-    <div class="header__tag_line">Sci-fi / Fantasy Author</div>
+  <!--   <div class="header__tag_line">Sci-fi / Fantasy Author</div>
     <!-- End header_tagline -->
-  </header>
+  <!-- </header>
   <!-- End header -->
 
   <!-- Begin Skip-link -->
   <a href="#main" class="skip-link">Skip to main content.</a>
   <!-- End Skip-link -->
 
+  <!-- Begin main -->
+  <main id="main" class="main" role="main">
+
+    <!-- Begin article: about -->
+    <article class="about-container" role="article">
+      <div class="about-image-container">
+        <img class="about-image" src="./images/cory_gilliam.jpg" alt="Cory Gilliam">
+      </div>
+      <h2 id="about" class="section-title about-title">About Me</h2>
+      <div class="section-body about-body">
+        <p>Lorem ipsum dolor sit amet, posuere venenatis mauris tempor viverra lacus eiusmod. Vivamus urna dolor, mi lacinia egestas habitasse nonummy, sed lacinia elit ut suspendisse morbi. Lacinia elit et ut, mi amet amet a tincidunt, non dictum integer nulla nonummy turpis, congue cras class purus ut consectetuer leo, dolor nulla aenean dolore nam. Eu facilisi. Praesentium in habitasse duis aliquet proin, nunc nullam vel purus in et, diam cum aliquam quam eget sociosqu. Non donec dui velit, sociis pellentesque amet natoque in eget, magna arcu arcu varius sem arcu dui, at urna venenatis mauris adipiscing augue, cras ornare sagittis maecenas fermentum. Mauris mauris bibendum est, sagittis lacus turpis maecenas, a magnis, cras cras facilisis neque. Massa metus, quisque sem, wisi aliquam aliquam et lobortis imperdiet libero. Purus pede donec, dictumst integer quis pretium, potenti nunc habitasse, luctus neque lectus sollicitudin aliquam pede.</p>
+        <p>Sollicitudin wisi, ac pharetra vitae in, neque mauris a ac, sed vivamus donec. Fusce nullam dignissim. Lorem mollis non vestibulum ligula. Volutpat aliquam lorem velit augue nisl nibh. In a, ut quam sed facilisis nulla etiam pede, dictum mauris erat orci. Ut sed dapibus vestibulum nulla, aliquam dolor quisque enim. Lorem mauris ac, ut enim etiam duis fermentum eu phasellus, tempus enim iaculis magnis consectetuer ante, torquent orci etiam vehicula, ante purus vitae magna. Qui ut, tellus ipsum aliquet et porttitor. Purus lorem, sit odio suspendisse. Ligula lorem, id magnis posuere ut aliquam purus quis, malesuada quisque donec nonummy sagittis. Donec volutpat, malesuada turpis id vestibulum elit.</p>
+      </div>
+    </article>
+    <!-- End about -->
+
+    <!-- Begin article: education -->
+    <article class="education-container" role="article">
+      <h2 id="education" class="section-title education-title">Education</h2>
+      <div class="section-body education-body">
+
+        <!-- Begin card: education -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">Bellevue University</div>
+            <div class="card-date">Mar 2019 - Jul 2020</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">Bachelors of Science: Web Development</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                <a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a>
+              </div>
+              <div class="card-email"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+        <!-- Begin card: education -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">Pellissippi State Community College</div>
+            <div class="card-date">Aug 2019 - May 2018</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">General Associates of Science</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum
+                has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                <a href="https://www.pstcc.edu/" target="_blank">Pellissippi State Community College</a>
+              </div>
+              <div class="card-email"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+        <!-- Begin card: education -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">East Tennessee State University</div>
+            <div class="card-date">Aug 2003 - May 2005</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">Bachelors of Science: Mass Communications (Seeking)</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum
+                has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                <a href="https://www.etsu.edu/ehome/" target="_blank">East Tennessee State University</a>
+              </div>
+              <div class="card-email"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+      </div>
+    </article>
+    <!-- End education -->
+
+    <!-- Begin article: employment -->
+    <article class="employment-container" role="article">
+      <h2 id="employment" class="section-title employment-title">Employment</h2>
+      <div class="section-body employment-body">
+
+        <!-- Begin card: employment -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">Wal-Mart</div>
+            <div class="card-date">Dec 2016 - Present</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">Associate</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum
+                has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                (865) 340-4509
+              </div>
+              <div class="card-email"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+        <!-- Begin card: employment -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">Knox Web</div>
+            <div class="card-date">Aug 2012 - Oct 2014</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">Web Developer / Drupal Specialist</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum
+                has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                (865) 588-2465
+              </div>
+              <div class="card-email"><a href="https://knoxweb.com/" target="_blank">Knox Web</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+        <!-- Begin card: employment -->
+        <div class="card-container">
+          <div class="card-left">
+            <div class="card-name">Redemption Church</div>
+            <div class="card-date">Dec 2005 - Jan 2012</div>
+          </div>
+          <div class="card-right">
+            <div class="card-title">Video Editor / Web Developer</div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, mentitum mandamus ne per. Sint quaeque molestiae sit in, ex euismod admodum
+                has. Has tota facete tibique te, ut sed cetero suscipit lobortis. Brute munere luptatum.</p>
+            </div>
+            <div class="card-footer">
+              <div class="card-url">
+                (865) 521-7777
+              </div>
+              <div class="card-email"></div>
+            </div>
+          </div>
+        </div>
+        <!-- End card -->
+
+      </div>
+    </article>
+    <!-- End employment -->
+
+    <!-- Begin article: experience -->
+    <article class="experience-container" role="article">
+      <h2 id="experience" class="section-title experience-title">Experience</h2>
+      <div class="section-body experience-body">
+
+        <ul class="experience-list">
+          <li class="experience-row">
+            <div class="experience-title">PHP</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">JavaScript</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">Cold Fusion</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-checked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">Java</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-checked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">C++</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+
+          <li class="experience-row">
+            <div class="experience-title">CSS</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-checked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">SASS / SCSS</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">BEM</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">Bootstrap</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-unchecked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+
+          <li class="experience-row">
+            <div class="experience-title">HTML</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">MySql</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">jQuery</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+
+          <li class="experience-row">
+            <div class="experience-title">Drupal</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-checked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">Node.js</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+          <li class="experience-row">
+            <div class="experience-title">WordPress</div>
+            <div class="experience-level">
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio" src="./images/radio-checked.svg" alt="checked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+              <img class="experience-radio unchecked" src="./images/radio-unchecked.svg" alt="unchecked" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <!-- End experience -->
+
+    <!-- Begin article: examples -->
+    <article class="examples-container" role="article">
+      <h2 id="examples" class="section-title examples-title">Experience</h2>
+
+      <div class="section-body examples-body">
+
+        <!-- Begin figure -->
+        <figure class="example">
+          <img class="example-image" src="./images/svcc.jpg" alt="Southside Virginia Community College website" />
+          <figcaption class="example-caption">Southside VA Community College</figcaption>
+        </figure>
+        <!-- End figure -->
+
+        <!-- Begin figure -->
+        <figure class="example">
+          <img class="example-image" src="./images/polar_temp.jpg" alt="Polar Temp" />
+          <figcaption class="example-caption">Polar Temp</figcaption>
+        </figure>
+        <!-- End figure -->
+
+        <!-- Begin figure -->
+        <figure class="example">
+          <img class="example-image" src="./images/sfdr.jpg" alt="Santa Fe Del Rio" />
+          <figcaption class="example-caption">Santa Fe Del Rio</figcaption>
+        </figure>
+        <!-- End figure -->
+
+      </div>
+    </article>
+    <!-- End examples -->
+
+  </main>
+  <!-- End main -->
+
+  <!-- Begin footer -->
+  <footer id="footer" class="footer" role="contentinfo">
+
+    <!-- Begin footer-body -->
+    <div class="contact">
+      <h2 id="contact" class="section-title contact-title">Contact</h2>
+      <div class="section-body contact-body"><a href="mailto:cgilliam@bellevue.edu" title="Email Cory Gilliam">cgilliam@bellevue.edu</a></div>
+    </div>
+    <!--end footer-body -->
+
+  </footer>
+  <!-- End footer -->
+
   <!-- Begin primary-nav -->
   <nav role="navigation">
     <!-- Begin primary-menu -->
     <ul class="main_menu">
       <li class="main_menu__item main_menu__item--active">
-        <a href="#home" class="main_menu__link main_menu__link--active" aria-label="Learn about Patricia Gilliam">Home</a>
+        <a href="#about" class="main_menu__link main_menu__link--active" aria-label="About Me">About Me</a>
       </li>
       <li class="main_menu__item">
-        <a href="#faq" class="main_menu__link" aria-label="Learn about the three act structure">FAQ</a>
+        <a href="#education" class="main_menu__link" aria-label="Education">Education</a>
       </li>
       <li class="main_menu__item">
-        <a href="#images" class="main_menu__link"  aria-label="Some images of Patricia Gilliam">Images</a>
+        <a href="#employment" class="main_menu__link" aria-label="Employment">Employment</a>
       </li>
       <li class="main_menu__item">
-        <a href="#links" class="main_menu__link">People to Follow</a>
+        <a href="#experience" class="main_menu__link" aria-label="Experience">Experience</a>
+      </li>
+      <li class="main_menu__item">
+        <a href="#examples" class="main_menu__link" aria-label="Work Examples">Work Examples</a>
+      </li>
+      <li class="main_menu__item">
+        <a href="#contact" class="main_menu__link" aria-label="Contact">Contact</a>
       </li>
     </ul>
     <!--end primary-menu -->
   </nav>
   <!--end primary-nav -->
 
-  <!-- Begin articles -->
-  <main id="main" class="main" role="main">
-    <!-- Begin article: home -->
-    <article id="home" class="home" role="article">
-      <p>Patricia Gilliam is the author of over ten sci-fi and superhero books. Some of these books include the Hannaria Series, Thaw in Hugh Howey's: The Silo Series, stories in multiple anthologies, the current Heroes of Corvus Series, and the soon to be released Horizons Beyond. After writing her first book in 2009, she has never lost her desire to continue writing. Writing for all these years has always overshadowed her bachelor’s degrees in psychology and mass communications from East Tennessee State University.</p>
-      <p>Patricia grew up in Greenville, Kingsport, and Blountville, Tennessee. After graduating college in 2005 with a BA in Psychology and a BA in Mass Communication, she moved to Knoxville, Tennessee. Once there, she set out to write and publish her first book, Out of the Gray, in 2009. Patricia has made appearances as a writer at local and regional sci-fi conferences. She been sought out for interviews and has been dubbed "Con Queen" by Lauren Moore at Keystroke Medium.</p>
-      <p>Patricia can almost always be found working on her next novel or helping aspiring writers through workshops or answering questions online. When Patricia is not writing, her and her husband since May of 2005, Cory Gilliam, travel to attend different sci-fi and writers’ conventions all over the south east.</p>
-    </article>
-    <!-- End home -->
-
-    <!-- Begin faq -->
-    <section id="faq" class="faq accordion vertical" role="article">
-      <h2 class="faq__title">Three Act Structure</h2>
-      <p class="faq__article">Whenever Patricia goes out to teach inspiring writers, she uses what she has learned from other people on how to layout stories. Most novels, movies, and television shows use a set of markers or beats to help structure how the tale unfolds. These beats here, commonly known as the Hero's Journey, are derived from the Save the Cat Method. They were greatly inspired by the book The Man of a Thousand Faces.</p>
-      <ul class="faq__act_list">
-        <li class="faq_act_list_item">
-          <h3 class="faq_act_list_title">Act 1</h3>
-          <dl class="faq__beat_list">
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-1" name="checkbox-accordion-1" />
-              <label for="checkbox-1">
-                <dt class="faq__beat_term">Opening Image</dt>
-              </label>
-              <dd class="faq__beat_def">A before snapshot of your hero, and their world.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-2" name="checkbox-accordion-2" />
-              <label for="checkbox-2">
-                <dt class="faq__beat_term">Setup</dt>
-              </label>
-              <dd class="faq__beat_def">An exploration of the hero's status quo life, and all its flaws, where we learn what the hero's life looks like before its epic transformation.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-3" name="checkbox-accordion-3" />
-              <label for="checkbox-3">
-                <dt class="faq__beat_term">Theme Stated</dt>
-              </label>
-              <dd class="faq__beat_def">A statement made by a character, typically not the hero, that hints at what the hero's arc will be, what the hero must learn or discover before the end of the book.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-4" name="checkbox-accordion-4" />
-              <label for="checkbox-4">
-                <dt class="faq__beat_term">Catalyst</dt>
-              </label>
-              <dd class="faq__beat_def">An inciting incident of life-changing event that happens to the hero, which will catapult them into a new world or new way of thinking.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-5" name="checkbox-accordion-5" />
-              <label for="checkbox-5">
-                <dt class="faq__beat_term">Debate</dt>
-              </label>
-              <dd class="faq__beat_def">A rection sequence where the hero debates what they will do next.</dd>
-            </div>
-          </dl>
-        </li>
-        <li class="faq_act_list_item">
-          <h3 class="faq_act_list_title">Act 2</h3>
-          <dl class="faq__beat_list">
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-6" name="checkbox-accordion-6" />
-              <label for="checkbox-6">
-                <dt class="faq__beat_term">Break Into 2</dt>
-              </label>
-              <dd class="faq__beat_def">The moment the hero decides to accept the call to action, leave their comfort zone, try something new, or venture into a new world or a new way of thinking.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-7" name="checkbox-accordion-7" />
-              <label for="checkbox-7">
-                <dt class="faq__beat_term">B Story</dt>
-              </label>
-              <dd class="faq__beat_def">The introduction of a new character of characters who will ultimately serve to help the hero learn the theme.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-8" name="checkbox-accordion-8" />
-              <label for="checkbox-8">
-                <dt class="faq__beat_term">Fun & Games</dt>
-              </label>
-              <dd class="faq__beat_def">This is where we see the hero in their new world. They are either loving it, or hating it, succeeding, or floundering.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-9" name="checkbox-accordion-9" />
-              <label for="checkbox-9">
-                <dt class="faq__beat_term">Midpoint</dt>
-              </label>
-              <dd class="faq__beat_def">Literally the middle of the story, where the fun and games culminates in either a false victory or a false defeat.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-10" name="checkbox-accordion-10" />
-              <label for="checkbox-10">
-                <dt class="faq__beat_term">Bad Guys Close In</dt>
-              </label>
-              <dd class="faq__beat_def">Depending upon the outcome of the midpoint, this will be an upward or downward path for the hero. Upward after a false defeat or downward after a false victory.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-11" name="checkbox-accordion-11" />
-              <label for="checkbox-11">
-                <dt class="faq__beat_term">All Is Lost</dt>
-              </label>
-              <dd class="faq__beat_def">The lowest point of the novel, an action beat where something happens to the hero, combined with the internal bad guys, pushes the hero to rock bottom.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-12" name="checkbox-accordion-12" />
-              <label for="checkbox-12">
-                <dt class="faq__beat_term">Dark Night of the Soul</dt>
-              </label>
-              <dd class="faq__beat_def">Here the hero takes time to process everything that has happened thus far. At this point, the hero should be worse off than they were at the beginning of the novel.</dd>
-            </div>
-          </dl>
-        </li>
-        <li class="faq_act_list_item">
-          <h3 class="faq_act_list_title">Act 3</h3>
-          <dl class="faq__beat_list">
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-13" name="checkbox-accordion-13" />
-              <label for="checkbox-13">
-                <dt class="faq__beat_term">Break Into 3</dt>
-              </label>
-              <dd class="faq__beat_def">The point where the hero realizes what they must do to not only fix all of their problems created in act two, but more important, fix themself.</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-14" name="checkbox-accordion-14" />
-              <label for="checkbox-14">
-                <dt class="faq__beat_term">Final</dt>
-              </label>
-              <dd class="faq__beat_def">Bad guys are destroyed, flaws are conquered, lovers are reunited. Not only is the hero's world saved, but it's a better place than it was before..</dd>
-            </div>
-
-            <div>
-              <input tabindex="-1" type="checkbox" id="checkbox-15" name="checkbox-accordion-15" />
-              <label for="checkbox-15">
-                <dt class="faq__beat_term">Final Image</dt>
-              </label>
-              <dd class="faq__beat_def">A mirror beat to the opening image. This is an after snapshot that reveals who the hero is, after going through the epic and satisfying transformation..</dd>
-            </div>
-          </dl>
-        </li>
-      </ul>
-    </section>
-    <!-- End faq -->
-
-    <!-- Begin images -->
-    <section id="images" class="image-grid" role="article">
-      <div class="image-grid__image">
-        <img src="./images/tricia.jpg" alt="Patricia Gilliam close up." class="image-grid__image__file">
-        <div class="image-grid__caption">Patricia Gilliam</div>
-      </div>
-      <div class="image-grid__image">
-        <img src="./images/tricia_table_fb1.jpg" alt="Patricia Gilliam at Fan Boy Expo 2017" class="image-grid__file">
-        <div class="image-grid__caption">Fan Boy Expo 2017</div>
-      </div>
-      <div class="image-grid__image">
-        <img src="./images/tricia_r2d2.jpg" alt="Photo of R2D2 with Patricia Gilliam." class="image-grid__file">
-        <div class="image-grid__caption">R2D2 wanted a book.</div>
-      </div>
-      <div class="image-grid__image">
-        <img src="./images/bn.jpg" alt="Patricia's first three books on the shelf at Barns and Noble" class="image-grid__file">
-        <div class="image-grid__caption">Books at Barns and Noble</div>
-      </div>
-      <div class="image-grid__image">
-        <img src="./images/tricia_toothless.jpg" alt="Photo of Patricia with Toothless from How to Train Your Dragon" class="image-grid__file">
-        <div class="image-grid__caption">Toothless on Security</div>
-      </div>
-      <div class="image-grid__image">
-        <img src="./images/tricia_fb2018.jpg" alt="Patricia Gilliam at Fan Boy Expo 2018" class="image-grid__file">
-        <div class="image-grid__caption">Fan Boy Expo 2018</div>
-      </div>
-    </section>
-    <!-- End images -->
-  </main>
-  <!-- End articles -->
-
-  <!-- Begin aside -->
-  <aside id="adide" class="aside" role="complementary">
-    <!-- Begin col-aside__container -->
-    <div id="links" class="aside-container">
-      <div class="aside-container__title">People to Follow</div>
-      <div class="aside-container__container">
-        <!-- Begin quick-links -->
-        <ul class="unordered__list" role="group" aria-label="Authors you may want to get to know">
-          <li class="unordered__item aside-container__list_item">
-            <a rel="noreferrer" class="aside-container__list_link" target="_blank" href="https://twitter.com/longshotauthor" aria-label="Visit Jim Butcher's Twitter page">Jim Butcher</a>
-          </li>
-          <li class="unordered__item aside-container__list_item">
-            <a rel="noreferrer" class="aside-container__list_link" target="_blank" href="https://www.youtube.com/channel/UCprKqV6qbSLAyXMggjitUtQ" aria-label="Watch videos on Nick Braker's YouTube channel">Nick Braker</a>
-          </li>
-          <li class="unordered__item aside-container__list_item">
-            <a rel="noreferrer" class="aside-container__list_link" target="_blank" href="https://twitter.com/hughhowey" aria-label="Visit Hugh Howey's Twitter page">Hugh Howey</a>
-          </li>
-          <li class="unordered__item aside-container__list_item">
-            <a rel="noreferrer" class="aside-container__list_link" target="_blank" href="https://www.youtube.com/channel/UCgpJphQOJzy32pVKOJSyMLw" aria-label="Watch videos on Sterling and Stone's YouTube channel">Sterling and Stone</a>
-          </li>
-        </ul>
-        <!-- End quick-links -->
-      </div>
-    </div>
-    <!-- End col-aside__container -->
-
-    <!-- Begin col-aside__container -->
-    <div id="address" class="aside-container">
-      <div class="aside-container__title">Bellevue University</div>
-      <div class="aside-container__container">
-        <!-- Begin address -->
-        <address class="address">
-          <div class="address__street_address">1000 Galvin Road South</div>
-          <div>
-            <span class="address__city">Bellevue, </span>
-            <span class="address__state">Nebraska </span>
-            <span class="address__zip">68005</span>
-          </div>
-          <div class="address__country">U.S.A</div>
-          <div class="address__phone">(402) 293-2000</div>
-          <div class="address__phone">1-800-756-7920</div>
-        </address>
-        <!-- End address -->
-      </div>
-    </div>
-    <!-- End col-aside__container -->
-  </aside>
-  <!-- End aside -->
-
-  <!-- Begin footer -->
-  <footer id="footer" class="footer" role="contentinfo">
-    <!-- Begin copyright -->
-    <div class="copyright">Copyright © 2019 Cory Gilliam All rights reserved.</div>
-    <!--end copyright -->
-  </footer>
-  <!-- End footer -->
-
+  <script>
+    $(function() {
+      $('.main_menu__link').click(function () {
+        $('.main_menu__link--active').removeClass('main_menu__link--active');
+        $(this).addClass('main_menu__link--active');
+      });
+    });
+  </script>
 </body>
 </html>
