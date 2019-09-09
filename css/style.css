@@ -227,16 +227,12 @@ img {
   Start
 --------------------------------------*/
 article {
-  width: 40em;
   margin: 0 auto 3em;
-  padding: 2em 1em;
+  padding: 2em calc((100% - 40em) / 2);
 }
 
 article:nth-child(2n) {
   background-color: rgba(0, 0, 0, .1);
-  width: 100%;
-  padding-left: calc((100% - 40em) / 2);
-  padding-right: calc((100% - 40em) / 2);
 }
 
 .section-title {
@@ -255,42 +251,69 @@ article:nth-child(2n) {
 }
 
 /*------------------------------------
-  Cards
+  myCards
 --------------------------------------*/
-.card-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  margin-bottom: 2em;
+.mycard-container {
+  margin-bottom: 3em;
 }
 
-.card-name,
-.card-date,
-.card-title,
-.card-url,
-.card-email {
+.mycard-name,
+.mycard-date,
+.mycard-title,
+.mycard-url,
+.mycard-email {
   font-weight: bold;
-  font-size: .9em;
-  font-style: italic;
   margin-bottom: .25em;
+  text-align: center;
 }
 
-.card-footer,
-.card-title {
+.mycard-name {
+  font-size: 1.15em;
+}
+
+.mycard-date {
+  font-size: .8em;
+  font-style: italic;
+}
+
+.mycard-body {
+  padding: .5em 0;
+}
+
+.mycard-footer,
+.mycard-title {
   border-top: 1px solid rgba(0, 0, 0, .55);
   border-bottom: 1px solid rgba(0, 0, 0, .55);
-  padding: .25em .5em;
+  padding: .25em 0;
 }
 
-.card-footer,
-.experience-row {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .mycard-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2em;
+  }
+
+  .mycard-footer,
+  .experience-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mycard-name,
+  .mycard-date,
+  .mycard-title,
+  .mycard-url,
+  .mycard-email {
+    text-align: initial;
+  }
 }
 
 /*------------------------------------
   Experience
 --------------------------------------*/
 .experience-row {
+  list-style: none;
   padding: .5em 1em;
 }
 
@@ -305,14 +328,31 @@ article:nth-child(2n) {
 /*------------------------------------
   Work Examples
 --------------------------------------*/
+.example {
+  border-radius: 3px;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
 .examples-body {
-  display: flex;
-  gap: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .example-caption {
-  font-size: .8em;
+  font-size: .65em;
+  background-color: rgba(0, 0, 0, .8);
+  color: rgba(255, 255, 255, .9);
+  padding: .5em 0;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .examples-body {
+    display: flex;
+    gap: 1em;
+  }
 }
 
 /*------------------------------------
@@ -339,49 +379,33 @@ article:nth-child(2n) {
 /*------------------------------------
   Main Nav
 --------------------------------------*/
-nav {
-  position: fixed;
-  width: 10em;
+.navbar-nav .nav-link {
   text-align: center;
-  top: 1em;
-  left: 1em;
 }
 
-.main_menu {
-  background-color: #2e2e2e;
-  border-radius: .35em;
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .9);
+  margin: .25em 0;
 }
 
-.main_menu__item {
-  list-style: none;
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #343a40;
+  background: rgba(255, 255, 255, .9);
+  border-radius: 3px;
 }
 
-.main_menu__link {
-  padding: 1em;
-  display: block;
-  border-bottom: 1px solid rgba(255, 255, 255, .7);
-  color: #fff;
+.navbar-dark .navbar-nav .nav-link:active {
+  margin-left: -8px;
 }
 
-.main_menu__item:first-child .main_menu__link {
-  border-radius: .35em .35em 0 0;
-}
+@media screen and (min-width: 768px) {
+  .navbar-dark .navbar-nav .nav-link {
+    margin: 0 .25em;
+  }
 
-.main_menu__item:last-child .main_menu__link {
-  border-bottom: none;
-  border-radius: 0 0 .35em .35em;
-}
-
-.main_menu__link--active {
-  background-color: #a84b70;
-}
-
-.main_menu__link:hover,
-.main_menu__link:focus {
-  background-color: #a84b70;
-  color: #fff;
-}
-
-.main_menu__link:active {
-  background-color: #555;
+  .navbar-dark .navbar-nav .nav-link:active {
+    margin-left: -2px;
+    margin-right: 11px;
+  }
 }
