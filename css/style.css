@@ -490,3 +490,20 @@ article:nth-child(2n) {
   padding: .25;
   text-align: center;
 }
+
+.modal-footer {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: center;
+}
+
+.modal-footer__text {
+  font-size: 1.5rem;
+}
+
+.close {
+  position: absolute;
+  right: .5em;
+  top: .25em;
+}
