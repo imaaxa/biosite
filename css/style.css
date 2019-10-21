@@ -244,6 +244,16 @@ article:nth-child(2n) {
   animation: font-size 1000 ease-in-out;
 }
 
+.header__link {
+  padding-left: 0em;
+  transition: all .1s ease-in-out;
+}
+
+.header__link:hover {
+  color: #006868;
+  padding-left: .25em;
+}
+
 .section-title {
   margin: 0 1em 1em;
   padding: .25em;
@@ -506,4 +516,11 @@ article:nth-child(2n) {
   position: absolute;
   right: .5em;
   top: .25em;
+}
+
+/*------------------------------------
+  Gallery
+--------------------------------------*/
+.presentation__video {
+  width: 100%;
 }
