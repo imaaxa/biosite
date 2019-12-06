@@ -1,0 +1,102 @@
+<!--
+============================================
+; Title: Assignment 3.3 - SOAP
+; Author: Cory Gilliam
+; Date: 1 Nov 2019
+; Modified By:
+; Description: Personal Portfolio Site. Influenced by a design by Pascal van Germett.
+;===========================================
+-->
+<!DOCTYPE html>
+<html class="pl" lang="en">
+
+<head>
+  <title>Cory Gilliam</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Home page of Cory Gilliam.">
+
+  <script src="../js/w3.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/style.css" media="all" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+  <!-- Begin header -->
+  <header id="header" class="header" role="banner">
+    <!-- Begining header_title -->
+    <h1 class="header__title"><a href="../index.html">Cory Gilliam</a></h1>
+    <!-- End header_title -->
+
+    <!-- Begining header_tagline -->
+    <!--   <div class="header__tag_line">Sci-fi / Fantasy Author</div> -->
+    <!-- End header_tagline -->
+  </header>
+  <!-- End header -->
+
+  <!-- Begin Skip-link -->
+  <a href="#main" class="skip-link">Skip to main content.</a>
+  <!-- End Skip-link -->
+
+  <!-- Begin primary-nav -->
+  <nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" role="navigation"
+    w3-include-html="./main_menu.html">
+  </nav>
+  <!-- End primary-nav -->
+  <script>
+    w3.includeHTML();
+  </script>
+
+  <!-- Begin main -->
+  <main id="main" class="main" role="main">
+
+    <!-- Begin article: diagrams -->
+    <article class="presentation-container" role="article">
+      <h2 id="presentation" class="section-title presentation-title">Presentation</h2>
+
+      <div class="section-body">
+        <video controls autoplay reload="none" class="presentation__video">
+          <source src="../restful-api-presentations/gilliam-assignment-8.3.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </article>
+    <!-- End diagrams -->
+
+  </main>
+  <!-- End main -->
+
+  <!-- Begin footer -->
+  <footer id="footer" class="footer" role="contentinfo">
+
+    <!-- Begin footer-body -->
+    <div class="contact">
+      <h2 id="contact" class="section-title contact-title">Contact</h2>
+      <div class="section-body contact-body"><a class="example-link" href="mailto:cgilliam@bellevue.edu" title="Email Cory Gilliam">cgilliam@bellevue.edu</a></div>
+    </div>
+    <!--end footer-body -->
+
+  </footer>
+  <!-- End footer -->
+
+  <script>
+    $(function() {
+      $('.main_menu__link').click(function () {
+        $('.main_menu__link--active').removeClass('main_menu__link--active');
+        $(this).addClass('main_menu__link--active');
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+</html>
