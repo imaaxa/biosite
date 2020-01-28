@@ -518,6 +518,7 @@ article:nth-child(2n) {
 --------------------------------------*/
 .navbar-nav .nav-link {
   text-align: center;
+  font-size: .8rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
